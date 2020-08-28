@@ -1,0 +1,6 @@
+<h3>Doctor Index Page</h3>
+
+<ul><% @doctors.each do |doc| %>
+    <li><%= link_to(doc.name, doctor_path(doc)) %></li>
+<% end  %>
+</ul>
